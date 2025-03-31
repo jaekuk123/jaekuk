@@ -1,0 +1,395 @@
+body {
+    margin: 0;
+    user-select: none;
+}
+/******헤더******/
+
+ .header {
+    width: 100%;
+    height: 112px;
+ }
+ 
+ ul {
+     display: flex;
+     align-items: center;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .web_title {
+    width: 120px;
+    height: 75px;
+    margin: 0 auto;
+ }
+ .title_banner {
+    width: 106px;
+    height: 75px;
+ }
+
+ .h_top {
+     width: 1285px;
+     height: 110px;
+     margin: 0 auto; 
+     display: flex;
+
+     align-items: center;
+ }
+
+ a {
+     color: var(--t_100);
+     text-decoration: none;
+     font-weight: 500;
+ }
+
+ .zzz_logo {
+     width: 83px;
+     height: 95px;
+ }
+ 
+ .web_menu {
+     width: 315px;
+     margin: 10px;
+     display: flex;
+     font-size: 16px;
+     font-weight: 600;
+     letter-spacing: -0.5px;
+
+     align-items: center;
+     justify-content: space-evenly;
+ }
+ 
+ .web_bar {
+     width: 847px;
+     height: 30px;
+     display: flex;
+     justify-content: flex-end;
+     position: relative;
+     top: 3px;
+
+     padding: 0 5px;
+ }
+
+  .search_btn {
+    border: 0;
+    width: 35px;
+    height: 28px;
+
+    background: url(./pot_img/1255.PNG) no-repeat;
+  }
+  
+  .hamchk_btn {
+    border: 0;
+    width: 30px;
+    height: 28px;
+    background: url(./pot_img/435.PNG);
+  }
+
+  .web_menu div a {
+    text-decoration: none; 
+    position: relative; 
+    color: black; 
+}
+
+.web_menu div a::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -5px; 
+    width: 0; 
+    height: 2px; 
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.web_menu div a:hover::after {
+    width: 100%;
+}
+
+/*******헤더********/
+
+/*****************검색바*****************/
+
+ .search_page {
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    position: relative;
+    right: 445px;
+    top: 275px;
+    display: none;
+    z-index: 999999;
+    background: white;
+
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .2);
+ }
+
+ .search_bar {
+    width: 278px;
+    height: 24.7px;
+    margin: 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    line-height: 1.35;
+ }
+
+
+    .container {
+    border: 1px solid;
+    color: #013ADF;
+ }
+ 
+ .search_record {
+     width: 358px;
+     height: 356px;
+     padding: 8px 20px;
+ }
+
+ .ingi_search {
+     font-weight: 500;
+     line-height: 1.6;
+ }
+ 
+ .box {
+     height: 50px;
+ }
+
+ .box_pop {
+     padding: 7px 0;
+     line-height: 50px;
+     font-size: 16px;
+ }
+ 
+ .search_close {
+     display: flex;
+     height: 55px;
+     width: 398px;
+     align-items: center;
+     justify-content: flex-end
+ }
+ 
+ #search_page_close_btn {
+     border: 0;
+     width: 75px;
+     height: 45px;
+     font: inherit;
+     color: black;
+     background-color: white;
+     
+ }
+
+
+/****************검색바******************/
+
+
+ /*******슬라이드******/
+ .swiper {
+    width: 1250px;
+    height: 319px;
+}
+
+.swiper-slide {
+    width: 402px;
+    height: 317px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 317px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slider_button_next, .slider_button_prev {
+    top: 153px;
+    bottom: 5px;
+    width: 54px;
+    height: 54px;
+}
+
+.slider_menu {
+    padding: 25px;
+    position: relative;
+}
+
+.swiper-pagination {
+    position: absolute;
+    left: 50%;
+    top: 94% !important;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0, 0, 0) translateX(-50%);
+    z-index: 10;
+}
+
+/*******슬라이드******/
+
+
+
+.popup_menu {
+    width: 645px;
+    height: 500px;
+    border: 1px solid #013ADF;
+    border-radius: 13px;
+    display: none; 
+    position: fixed; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 1000; 
+    background-color: white;
+}
+
+.day_webtoon {
+    width: 545px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.web_img1 {
+    width: 300px;
+    height: 398px;
+    border-radius: 13px;
+}
+
+.popup_layer {
+    display: flex;
+    justify-content: center;
+}
+
+#popup_monday, #popup_Tuseday, #popup_Wednesday,
+#popup_Thursday, #popup_Friday, #popup_Saturday, #popup_Sunday {
+    width: 615px;
+    height: 372px;
+    justify-content: space-around;
+    border-radius: 13px;
+    display: flex;
+}
+
+.webtoon_tag {
+    width: 200px;
+    height: 35px;
+    margin: 0 8px 3px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.box_tag1 {
+    width: 56px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0 8px 3px 0;
+    background-color: #E6E6E6;
+}
+
+.box_tag2 {
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #E6E6E6;
+    margin: 0 8px 3px 0;
+}
+
+.webtoon_story {
+    width: 290px;
+    height: 235px;
+    border-radius: 10px;
+    background-color: #E6E6E6;
+}
+
+.review_ment {
+    padding: 5px;
+}
+
+.webtoon_story2 {
+    width: 310px;
+    height: 255px;
+    border-radius: 10px;
+    background-color: #E6E6E6;
+    margin: 0 8px 3px 0;
+}
+
+.fontsa {
+    font-size: 17px;
+}
+
+.yoil_webtoon {
+    padding: 10px;
+}
+
+.web_title_box {
+    width: 1250px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.web_title_name {
+    width: 1250px;
+    height: 65px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toon_box_list {
+    width: 165px;
+    height: 220px;
+    float: left;
+}
+
+.web_Monday_img, .web_Tuseday_img, .web_Wednesday_img,
+.web_Thursday_img, .web_Friday_img, .web_Saturday_img, .web_Sunday_img {
+    width: 167px;
+    height: 220px;
+}
+
+.name_box {
+    width: 164px;
+    height: 56px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.more_view {
+    color: gray;
+    font-size: 15px;
+}
+
+.watch_box {
+    width: 276px;
+    height: 49px;
+    line-height: 45px;
+    border: 1px solid #013ADF;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #013ADF;
+}
+
+
+/*******************************************/
+
+.box_footer {
+    width: 100%;
+    height: 250px;
+    background-color: cornflowerblue;
+}
+
